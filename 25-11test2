@@ -1,0 +1,6 @@
+list=[1,4,2,7,5,9,0]
+p=list[0]
+for i in list:
+    if(p>i):
+        p=i
+        print(p)
