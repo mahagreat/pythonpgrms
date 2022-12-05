@@ -1,0 +1,12 @@
+n=int(input('no of elements'))
+num=int(input('enter first number'))
+i=1
+l=s=num
+while(i<n):
+    p=int(input('enter another element'))
+    if(p>l):
+        l=p
+    if(p<s):
+        s=p
+    i=i+1
+print(l-s)
