@@ -1,0 +1,21 @@
+n=int(input())
+x=t=n
+count=0
+while(n!=0):
+    r=n%10
+    count=count+1
+    n=n//10
+i=count-1
+s=0
+while(t!=0):
+    r=t%10
+    q=10
+    p=q**i
+    s=s+r*p
+    i=i-1
+    t=t//10
+print(s)
+if(s==x):
+    print('palindrome')
+else:
+    print('not a palindrome')
