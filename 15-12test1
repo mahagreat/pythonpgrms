@@ -1,0 +1,13 @@
+n=int(input())
+a=list(map(int,input().split()))
+neg=[]
+pos=[]
+for i in range(0,n):
+    if a[i]>=0:
+        pos.append(a[i])
+    else:
+        neg.append(a[i])
+print(neg)
+print(pos)
+integers=pos+neg
+print(integers)
