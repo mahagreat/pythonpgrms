@@ -1,0 +1,13 @@
+n=int(input())
+a=list(map(int,input().split()))
+odd=[]
+even=[]
+for i in range(0,n):
+    if a[i]%2==0:
+        even.append(a[i])
+    else:
+        odd.append(a[i])
+print(odd)
+print(even)
+integers=odd+even
+print(integers)
