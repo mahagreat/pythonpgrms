@@ -1,0 +1,9 @@
+def leap(a):
+    if a%4==0 and a%100!=0:
+        print('leap year',a)
+    if a%400==0:
+        print('leap year',a)
+a=int(input())
+b=int(input())
+for i in range(a,b):
+    leap(i)
