@@ -1,0 +1,11 @@
+n=int(input("enter number"))
+c=0
+a=list(map(int,input().split()))
+print(a)
+for i in range(0,n):
+    c=0
+    for j in range(0,n):
+        if a[i]==a[j]:
+            c=c+1
+    if c==1:
+        print(a[i])
