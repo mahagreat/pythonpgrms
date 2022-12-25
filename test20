@@ -1,0 +1,14 @@
+n=int(input('no of numbers'))
+a=list(map(int,input().split()))
+c=0
+l=[]
+for i in range(0,n):
+    c=0
+    p=a[i]
+    for j in range(1,p+1):
+        if p%j==0:
+            c=c+1
+    if c==2:
+        l.append(a[i])
+print(max(l))
+print(min(l))
