@@ -1,0 +1,7 @@
+n=int(input())
+l=list(map(int,input().split()))
+se=int(input())
+if se in l:
+    print("found at index",l.index(se))
+else:
+    print("not found")
