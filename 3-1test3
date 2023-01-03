@@ -1,0 +1,22 @@
+n=int(input())
+A=[]
+lsum=0
+rsum=0
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in A:
+    print(i)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            lsum=lsum+A[i][j]
+        if i+j==n-1:
+            rsum=rsum+A[i][j]
+if (rsum>lsum):
+    print(rsum-lsum)
+else:
+    print(lsum-rsum)
