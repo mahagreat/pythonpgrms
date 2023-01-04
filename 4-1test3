@@ -1,0 +1,19 @@
+class Solution(object):
+    def diagonalSum(self, mat):
+        ssum=psum=0
+        n=len(mat)
+        for i in range(n):
+            for j in range(n):
+                if i+j==n-1:
+                    ssum=ssum+mat[i][j]
+                    print(ssum)
+                if i==j:
+                    psum=psum+mat[i][j]
+                    print(psum)
+        if n%2==0:
+            return(ssum+psum)
+        else:
+            p=n//2
+            i=j=p
+            psum=psum-mat[i][j]
+            return(ssum+psum)
