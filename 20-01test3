@@ -1,0 +1,9 @@
+s=input()
+n=len(s)
+v=[97,101,105,111,117,65,69,73,79,85]
+for i in range(0,n):
+    x=ord(s[i])
+    if x in v:
+      continue
+    else:
+        print(s[i],end='')
